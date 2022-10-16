@@ -1,0 +1,1 @@
+# NTT-DATA_Diversidade_em_Tech
