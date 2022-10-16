@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .border{
+            border-width: 3px;
+            border-style: solid;
+            border-color: blue;
+            
+        }
+        .border2{
+            border-width: 3px;
+            border-style: solid;
+            border-color: green;
+            
+        }
+        .alignright {
+
+        float: right;
+        border-width: 3px;
+        border-style: solid;
+        border-color: blue;
+    }
+    </style>
+    <title>Meu Primeiro Site</title>
+</head>
+<body>
+    <h2 style="color:blue">Feito por: </h2><h2 style="float:center">Gustavo_Gonçalves_Dias_Neves</h2><a class="alignright" href="https://github.com/Gustavo-Goncalves-Dias-Neves">Meu GitHub =D</a>
+    <hr />
+    <h2>HTML na Pratica - DIO</h2>
+    <h2>índice</h2>
+    <ul>
+        <li><a href="#Estrutura_HTML">Estrutura Basica do HTML</a></li>
+        <li><a href="#TAGS_HTML">TAGS - HTML</a></li>
+        <ul>
+            <li><a href="#title">&lt;Title&gt;</a></li>
+            <li><a href="#i">&lt;i&gt;</a></li>
+            <li><a href="#input">&lt;input&gt;</a></li>
+            <li><a href="#img">&lt;img&gt;</a></li>
+        </ul>
+        <li><a href="#Atributos_HTML">Atributos Tags - HTML</a></li>
+        <ul>
+            <li><a href="#id">id</a></li>
+            <li><a href="#style">style</a></li>
+            <li><a href="#class">class</a></li>
+            <li><a href="#type">type</a></li>
+            <li><a href="#src">src</a></li>
+        </ul>
+        <li><a href="#TAGS_Texto_HTML">Tags para TEXTO - HTML</a></li>
+        <ul>
+            <li><a href="#H1_H6">H1-H6 (Cabeçalhos)</a></li>
+            <li><a href="#p">&lt;p&gt; (paragrafo)</a></li>
+            <li><a href="#mark">&lt;mark&gt; (marcador)</a></li>
+            <li><a href="#small">&lt;small&gt; (sub-titulo)</a></li>
+            <li><a href="#i_2">&lt;i&gt; (italico)</a></li>
+            <li><a href="#u">&lt;u&gt; (Sublinhado)</a></li>
+            <li><a href="#strong">&lt;strong&gt; (Negrito)</a></li>
+            <li><a href="#sup">&lt;sup&gt; (Texto-Elevado)</a></li>
+            <li><a href="#blockquote">&lt;blockquote&gt; (Subseção-Texto)</a></li>
+            <li><a href="#sub">&lt;sub&gt; (Texto-Abaixo)</a></li>
+        </ul>
+        <li><a href="#Listas_HTML">Listas ordenadas & Listas Não ordenadas - HTML</a></li>
+        <ul>
+            <li><a href="#ol">&lt;ol&gt; (Lista-ordenada)</a></li>
+            <li><a href="#li">&lt;li&gt; (List-item)</a></li>
+            <li><a href="#ul">&lt;p&gt; (Lista-não-ordenada)</a></li>
+        </ul>
+        <li><a href="#BONUS_listas">***BONUS***</a></li>
+        <li><a href="#Links_HTML">Links - HTML</a></li>
+        <ul>
+            <li><a href="#a">&lt;a&gt; (Tag-Ancora)</a></li>
+            <li><a href="#href">href (Referencia)</a></li>
+            <li><a href="#title_link">title (Caixinha-texto-dica)</a></li>
+            <li><a href="#target">target (trajeto/alvo)</a></li>
+        </ul>
+        <li><a href="#BONUS++">BONUS++</a></li>
+        <ul>
+            <li><a href="#font">&lt;font&gt; (Tamanho-da-Fonte)</a></li>
+            <li><a href="#del">&lt;del&gt; (Deletar-Texto/riscar)</a></li>
+            <li><a href="#p_2">&lt;p&gt; (paragrafo)</a></li>
+            <li><a href="#abbr">&lt;abbr&gt; (abreviação)</a></li>
+        </ul>
+    </ul>
+
+    <h2 id="Estrutura_HTML">Estrutura Basica do HTML</h2>
+    <p><strong>"HTML:5"</strong></p>
+    <p class="border" style="width: 70px;height: 20px;">
+        html:5
+    </p>
+    <p>Se Colocar <strong><i>"html:5"</i></strong> e dar <strong><i>TAB</i></strong> o Visual-Studio Code vai completar a estrutura basica do HTML.</p>
+    <p><strong>Resultado:</strong></p>
+    <p class="border" style="width: 700px;height: 265px;">
+        <br>
+        &lt;!DOCTYPE html&gt;<br>
+        &lt;html lang="en"&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;head&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset="UTF-8"&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&lt;title>Document&lt;/title><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/head&gt;<br>
+        &lt;body&gt;<br><br>        
+            &lt;/body&gt;<br>
+            &lt;/html&gt;
+            <br><br>
+    </p> 
+
+    <h2 id="TAGS_HTML">TAGS - HTML</h2>
+    <p><strong>Title, Strong, i, input, img</strong></p>
+
+    <p id="title"><strong>&lt;Title&gt; = </strong> Titulo da Pagina (Refencia ao Titulo da aba da pagina)</p>
+
+    <p><strong>&lt;Strong&gt; = </strong> Se colocado essa tag dentro de um texto deixa ele em <strong>Negrito</strong></p>
+        <p><strong>Exemplo da Tag:</strong></p>
+        <p class="border" style="width: 310px;height: 20px;">
+            &lt;strong&gt;Texto em Negrito&lt;/strong&gt;
+        </p>
+        <p><strong>Resultado:</strong></p>
+        <p class="border" style="width: 160px;height: 20px;"><strong>Texto em Negrito</strong></p>
+
+    <p id="i"><strong>&lt;i&gt; = </strong> Coloca o Texto em <i>Italico<i></p>
+        <p><strong>Exemplo da Tag:</strong></p>
+        <p class="border" style="width: 205px;height: 20px;">
+            &lt;i&gt;Texto em Italico&lt;/i&gt;
+        </p>
+        <p><strong>Resultado:</strong></p>
+        <p class="border" style="width: 150px;height: 20px;"><i>Texto em Italico<i></p>
+
+    <p id="input"><strong>&lt;input /&gt; = </strong> Coloca um caixa de texto</p>
+        <p><strong>Exemplo da Tag:</strong></p>
+        <p class="border" style="width: 640px;height: 20px;">
+            &lt;p&gt; input: &lt;input type="text" placeholder="Insira o texto aqui =D" /&gt;&lt;/p&gt;
+        </p>
+        <p><i><strong>OBS:</strong><u> Aqui usei o <strong>&lt;p&gt;</strong> para colocar um texto no inicio do Input<br></i></u></p>
+        <p><strong>Resultado:</strong></p>
+        <p class="border" style="width: 260px;height: 65px;"><br>Input: <input type="text" placeholder="Insira o texto aqui =D" ></p>
+    
+    <p id="img"><strong>&lt;img /&gt; = </strong> Com essa tag conseguimos colocar imagens seja da <strong>internet</strong> ou do nosso <strong>Armazenamento Local.</strong></p>
+        <p><strong>Exemplo da Tag:</strong></p>
+        <p class="border" style="width: 1020px;height: 20px;">
+            &lt;img width="200" src="https://blog.sesisenai.org.br/wp-content/uploads/2021/09/shutterstock_329205053-scaled.jpg" /&gt;
+        </p>
+        <p><strong>Resultado:</strong></p>
+        <p class="border" style="width: 200px;height: 133px;"><img width="200" src="https://blog.sesisenai.org.br/wp-content/uploads/2021/09/shutterstock_329205053-scaled.jpg" ></p>
+    
+    <h2 id="Atributos_HTML">Atributos Tags - HTML</h2>
+    <p><strong>id, style, class, type, src</strong></p>
+    
+    <p id="id"><strong>&lt;id&gt; = </strong> atributo que adiciona um <strong>ID</strong> a um item do HTML</strong></p>
+        <p><strong>Exemplo do atributo:</strong></p>
+        <p class="border" style="width: 270px;height: 20px;">
+            &lt;p id="label"&gt;Texto Label&lt;/p&gt;
+        </p>
+        <p><strong>Resultado:</strong></p>
+        <p class="border" style="width: 100px;height: 20px;" id="label">Texto Label</p>
+        <p><i><strong>OBS: <u>O Id </strong>não serve só para adicionar um ID mas também para localizar o item no HTML cujo o ID seja oque esta setado nele.</u></i></p>
+
+    <p id="style"><strong>&lt;style&gt; = </strong> atributo que adiciona um <strong>"ESTILO"</strong> a um item do HTML como cor, largura, altura, etc...</strong></p>
+        <p><strong>Exemplo do atributo:</strong></p>
+        <p class="border" style="width: 400px;height: 20px;">
+            &lt;p style="color:green"&gt;Texto Label Style&lt;/p&gt;
+        </p>
+        <p><strong>Resultado:</strong></p>
+        <p class="border" style="width: 150px;height: 20px;color:green">Texto Label Style</p>
+    
+    <p id="class"><strong>&lt;class&gt; = </strong> atributo que adiciona uma <strong>"CLASSE"</strong> a um item do HTML como cor, largura, altura (usado com CSS Declaro no HTML)</strong></p>
+        <p><strong>Exemplo do atributo:</strong></p>
+            <p><strong>CSS:</strong></p>
+            <p class="border" style="width: 400px;height: 120px;">&lt;style&gt;.border2{<br>
+                border-width: 3px;<br>
+                border-style: solid;<br>
+                border-color: green;<br>
+                }<br>
+                &lt;/style&gt;</p>
+
+            <p><strong>HTML:</strong></p>
+            &lt;p class="border2"&gt;Texto Label Class&lt;/p&gt;
+        </p>
+        <p><strong>Resultado:</strong></p>
+        <p class="border2" style="width: 150px;height: 20px;">Texto Label Class</p>
+
+    <p id="type"><strong>&lt;type&gt; = </strong> atributo que adiciona uma <strong>"TIPO"</strong> a um item do HTML como tipo texto, numero, cor, etc...</strong></p>
+        <p><strong>Exemplo do atributo:</strong></p>
+        <p class="border" style="width: 430px;height: 20px;">
+            &lt;p&gt;Selecione a Cor: &lt;input type="color" /&gt;&lt;/p&gt;
+        </p>
+        <p><i><strong>OBS:</strong><u> Aqui usei o <strong>&lt;p&gt;</strong> para colocar um texto no inicio do Input<br></i></u></p>
+        <p><strong>Resultado:</strong></p>
+        <p class="border" style="width: 300px;height: 35px;">Selecione a Cor:  <input type="color" style="width: 150px;height: 10px;"></p>
+    
+        <p id="src"><strong>&lt;scr&gt; = </strong> atributo que adiciona uma <strong>"SOURCE"</strong> a um item do HTML do tipo caminho - <strong>Local</strong> ou na<strong> WEB</strong> (mais comunmente usado em imagens)...</strong></p>
+        <p><strong>Exemplo do atributo:</strong></p>
+        <p class="border" style="width: 830px;height: 20px;">
+            &lt;img src="https://www.projetodraft.com/wp-content/uploads/2019/12/digital-innovation-one.jpg" /&gt;
+        </p>
+        <p><strong>Resultado:</strong></p>
+        <img src="https://www.projetodraft.com/wp-content/uploads/2019/12/digital-innovation-one.jpg" class="border" style="width: 200px;height: 150px;" />
+
+    <h2 id="TAGS_Texto_HTML">Tags para TEXTO - HTML</h2>
+    <p><strong>(h1 até h6), p, mark, small, i, u, strong, sup, blockquote, sub</strong></p>
+
+    <p id="H1_H6"><strong>&lt;h1&gt; = </strong> tag de cabeçalho em diferentes niveis do <strong>h1</strong> até o <strong>h6</strong> diminuindo em ordem decrescente.</strong></p>
+    <p><strong>Exemplo da TAG:</strong></p>
+    <p class="border" style="width: 430px;height: 120px;">
+        &lt;h1&gt;Cabeçalho nível 1&lt;/h1&gt;<br>
+        &lt;h2&gt;Cabeçalho nível 2&lt;/h2&gt;<br>
+        &lt;h3&gt;Cabeçalho nível 3&lt;/h3&gt;<br>
+        &lt;h4&gt;Cabeçalho nível 4&lt;/h4&gt;<br>
+        &lt;h5&gt;Cabeçalho nível 5&lt;/h5&gt;<br>
+        &lt;h6&gt;Cabeçalho nível 6&lt;/h6&gt;
+    </p>
+    <p><strong>Resultado:</strong></p>
+        <table class="border" cellpadding="1" cellspacing="1" style="width:500px">
+            <tbody>
+                <tr>
+                    <td><h1>Cabeçalho nível 1</h1></td>
+                </tr>
+                <tr>
+                    <td><h2>Cabeçalho nível 2</h2></td>
+                </tr>
+                <tr>
+                    <td><h3>Cabeçalho nível 3</h3></td>
+                </tr>
+                <tr>
+                    <td><h4>Cabeçalho nível 4</h4></td>
+                </tr>
+                <tr>
+                    <td><h5>Cabeçalho nível 5</h5></td>
+                </tr>
+                <tr>
+                    <td><h6>Cabeçalho nível 6</h6></td>
+                </tr>
+            </tbody>
+        </table>
+    <p id="p"><strong>&lt;p&gt; = </strong> tag que representa um paragrafo.</strong></p>
+    <p><strong>Exemplo da TAG:</strong></p>
+    <p class="border" style="width: 200px;height: 45px;">
+        &lt;h2&gt;Cabeçalho&lt;/h2&gt;<br>
+        &lt;p&gt;paragrafo&lt;/p&gt;
+    </p>
+    <p><strong>Resultado:</strong></p>
+        <h2 class="border" style="width: 200px;height: 25px;">Cabeçalho</h2>
+        <p class="border" style="width: 200px;height: 20px;">paragrafo</p>
+    
+    <p id="mark"><strong>&lt;mark&gt; = </strong> tag serve como um <strong>"MARCADOR"</strong>.</strong></p>
+    <p><strong>Exemplo da TAG:</strong></p>
+        <p class="border" style="width: 400px;height: 20px;">
+            &lt;h2&gt;Titulo de &lt;mark&gt;Exemplo&lt;/mark&gt;&lt;/h2&gt;
+        </p>
+    <p><strong>Resultado:</strong></p>
+        <h2 class="border" style="width: 250px;height: 30px;">Texto de <mark>Exemplo</mark></h2>
+
+    <p id="small"><strong>&lt;small&gt; = </strong> tag serve como um sub-titulo.</strong></p>
+    <p><strong>Exemplo da TAG:</strong></p>
+        <p class="border" style="width: 510px;height: 20px;">
+            &lt;h2&gt;Titulo de Exemplo&lt;/h2&gt;&lt;small&gt;SMALL TEXT&lt;/small&gt;
+        </p>
+    <p><strong>Resultado:</strong></p>
+        <h2 class="border" style="width: 250px;height: 30px;">Texto de Exemplo </h2><small class="border" style="width: 250px;height: 30px;">SMALL TEXT</small>
+
+    <p id="i_2"><strong>&lt;i&gt; = </strong> Coloca o Texto em <i>Italico<i>.</p>
+        <p><strong>Exemplo da Tag:</strong></p>
+        <p class="border" style="width: 205px;height: 20px;">
+            &lt;i&gt;Texto em Italico&lt;/i&gt;
+        </p>
+        <p><strong>Resultado:</strong></p>
+        <p class="border" style="width: 150px;height: 20px;"><i>Texto em Italico<i></p>
+
+    <p id="u"><strong>&lt;u&gt; = </strong> Coloca o Texto em <u>Sublinhado/Underline</u>.</p>
+        <p><strong>Exemplo da Tag:</strong></p>
+        <p class="border" style="width: 260px;height: 20px;">
+                &lt;u&gt;Texto em Sublinhado&lt;/u&gt;
+            </p>
+            <p><strong>Resultado:</strong></p>
+            <p class="border" style="width: 180px;height: 20px;"><u>Texto em Sublinhado</u></p>
+
+    <p id="strong"><strong>&lt;Strong&gt; = </strong> Se colocado essa tag dentro de um texto deixa ele em <strong>Negrito</strong></p>
+    <p><strong>Exemplo da Tag:</strong></p>
+        <p class="border" style="width: 310px;height: 20px;">
+            &lt;strong&gt;Texto em Negrito&lt;/strong&gt;
+        </p>
+        <p><strong>Resultado:</strong></p>
+        <p class="border" style="width: 160px;height: 20px;"><strong>Texto em Negrito</strong></p>
+
+    <p id="sup"><strong>&lt;sup&gt; = </strong> Essa tag deixa o texto um pouco elevado <strong>(mais utilizado em calculos matematicos)</strong></p>
+    <p><strong>Exemplo da Tag:</strong></p>
+        <p class="border" style="width: 410px;height: 20px;">
+            &lt;strong&gt;Conta: 2 &lt;sup&gt;4&lt;/sup&gt; = 16&lt;/strong&gt;
+        </p>
+        <p><strong>Resultado:</strong></p>
+        <p class="border" style="width: 155px;height: 20px;"><strong>Conta: 2 <sup>4</sup> = 16</strong></p>
+
+    <p id="blockquote"><strong>&lt;blockquote&gt; = </strong> Essa tag deixa o texto dentro de uma outra seção de Texto.</p>
+    <p><strong>Exemplo da Tag:</strong></p>
+        <p class="border" style="width: 410px;height: 40px;">
+            &lt;p&gt;Texto inicial&lt;/p&gt;<br>
+            &lt;blockquote&gt;Texto blockquote&lt;/blockquote&gt;
+        </p>
+        <p><strong>Resultado:</strong></p>
+        <p class="border" style="width: 155px;height: 20px;">Texto inicial</p>
+        <blockquote class="border" style="width: 155px;height: 20px;">Texto blockquote</blockquote>
+    </p>
+    <p id="sub"><strong>&lt;sub&gt; = </strong> Essa tag deixa o texto abaixo da linha <strong>(mais utilizado em calculos matematicos)</strong></p>
+    <p><strong>Exemplo da Tag:</strong></p>
+        <p class="border" style="width: 330px;height: 20px;">
+            &lt;strong&gt;H&lt;sub&gt;2&lt;/sub&gt;O&lt;/strong&gt;
+        </p>
+        <p><strong>Resultado:</strong></p>
+        <p class="border" style="width: 60px;height: 20px;"><strong>H<sup>2</sup>O</strong></p>
+
+    <h2 id="Listas_HTML">Listas ordenadas & Listas Não ordenadas - HTML</h2>
+    <p><strong>ol, ul, li</strong></p>
+
+    <p id="ol"><strong>&lt;ol&gt; = </strong> tag de lista ordenada <strong>ordenando numericamente</strong> em ordem crescente.</strong></p>
+    <p id="li"><strong>&lt;li&gt; = </strong> tag de item da lista <strong>"list item"</strong>.</strong></p>
+
+    <p><strong>Exemplo da TAG:</strong></p>
+    <p class="border" style="width: 430px;height: 100px;">
+        &lt;ol&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Item 1&lt;/li&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Item 2&lt;/li&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Item 3&lt;/li&gt;<br>
+        &lt;/ol&gt;<br>
+    </p>
+    
+    <p><strong>Resultado:</strong></p>
+        <table class="border" cellpadding="1" cellspacing="1" style="width:140px">
+            <tbody>
+                <tr>
+                    <td>
+                    <ol>
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                    </ol>
+                </td>
+                </tr>
+            </tbody>
+        </table>
+
+    <p id="ul"><strong>&lt;ul&gt; = </strong> tag de lista não ordenada.</strong></p>
+    <p><strong>Exemplo da TAG:</strong></p>
+    <p class="border" style="width: 430px;height: 100px;">
+        &lt;ul&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Item 1&lt;/li&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Item 2&lt;/li&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Item 3&lt;/li&gt;<br>
+        &lt;/ul&gt;<br>
+    </p>
+    
+    <p><strong>Resultado:</strong></p>
+        <table class="border" cellpadding="1" cellspacing="1" style="width:140px">
+            <tbody>
+                <tr>
+                    <td>
+                    <ul>
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                    </ul>
+                </td>
+                </tr>
+            </tbody>
+        </table>
+
+    <h2 id="BONUS_listas">***BONUS***</h2>
+    <p><strong>É possivel usar a tag de lista ordenada e não ordenada com sub-items.</strong></p>
+    <p><strong>Exemplo da TAG:</strong></p>
+    <p class="border" style="width: 430px;height: 220px;">
+        &lt;ul&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Item 1&lt;/li&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Item 2&lt;/li&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Item 3&lt;/li&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Item 4<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Item 4.1&lt;/li&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Item 4.2&lt;/li&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;<br>
+
+        &lt;/ul&gt;<br>
+    </p>
+    
+    <p><strong>Resultado:</strong></p>
+        <table class="border" cellpadding="1" cellspacing="1" style="width:200px">
+            <tbody>
+                <tr>
+                    <td>
+                    <ul>
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                            <li>Item 4
+                                <ul>
+                                    <li>Item 4.1</li>
+                                    <li>Item 4.2</li>
+                                </ul>
+                            </li>
+                    </ul>
+                </td>
+                </tr>
+            </tbody>
+        </table>
+
+    <h2 id="Links_HTML">Links - HTML</h2>
+    <p><strong>a, href, title, target</strong></p>
+    <p id="a"><strong>&lt;a&gt; = </strong> tag de <strong>"ANCORA"</strong> (normalmente usada quando sinalizada como links).</strong></p>
+    <p id="href"><strong>&lt;href&gt; = </strong> atributo <strong>"REFERENCIA"</strong> (normalmente usada para links).</strong></p>
+    <p id="title_link"><strong>&lt;title&gt; = </strong> atributo quando usado dentro de alguma tag clicavel, abrira um <strong>"CAIXINHA DE TEXTO DICA"</strong>.</strong></p>
+    <p id="target"><strong>&lt;target&gt; = </strong> atributo <strong>"ALVO"</strong> quando colocado em uma tag clicavel. (Muito utilizado atualmente para quando clicar no item html abrir uma nova pagina ou usar a mesma).</strong></p>
+    
+    <p><strong>Exemplo da Tag:</strong></p>
+        <p class="border" style="width: 780px;height: 20px;">
+            &lt;a&gt; href="http://dio.me" title="Clique aqui para saber mais" target="_blank"&gt;Dio.me&lt;/a&gt;
+        </p>
+        <p><strong>Resultado:</strong></p>
+        <p class="border" style="width: 70px;height: 20px;"><a href="http://dio.me" title="Clique aqui para saber mais" target="_blank">Dio.me</a>
+        <p><strong>OBS: <u>Se você passar o Mouse por cima e esperar um pouco a caixinha de Texto aparece =D</u></strong></p>
+
+        <p><strong>Explicação dos Atributos:</strong></p>
+        <p><strong>href: </strong> Pode ser utilizado tanto para sites como arquivos locais<br> (quando locais basta apenas digitar o nome do arquivo se estiver na mesma pasta, caso contrario digite o caminho do arquivo)</p>
+        <p><strong>title: </strong> Atributo quando usado dentro de alguma tag clicavel, abrira um <strong>"CAIXINHA DE TEXTO DICA"</strong>.</p>
+        <p><strong>target: </strong> Para abrir em uma nova pagina utilize entre as apas <strong>_blank</strong>, caso queira usar a mesma aba para entrar no site ou arquivo local<strong>_self</strong></p> 
+    </p>
+
+    <h2 id="BONUS++">BONUS ++</h2>
+    <p><strong>Sobre as tags (font, del, p, abbr)</strong></p>
+    <p id="font"><strong>&lt;font&gt; = </strong> tag para setar o <strong>Tamanho da Fonte</strong>.</strong></p>
+    <p><strong>Exemplo da Tag:</strong></p>
+        <p class="border" style="width: 640px;height: 20px;">
+            &lt;p&gt;Testando a tag &lt;font size="5"&gt;TAMANHO DA FONTE&lt;/font&gt;&lt;/p&gt;
+        </p>
+        <p><strong>Resultado:</strong></p>
+        <p class="border" style="width: 470px;height: 35px;">Testando a tag <font size="5">TAMANHO DA FONTE</font></p>
+
+    <p id="del"><strong>&lt;del&gt; = </strong> tag para <strong>Deletar um Texto de uma frase/ficar riscado</strong>.</strong></p>
+    <p><strong>Exemplo da Tag:</strong></p>
+        <p class="border" style="width: 340px;height: 20px;">
+            &lt;p&gt;www.google&lt;del&gt;.com&lt;/del&gt;&lt;/p&gt;
+        </p>
+        <p><strong>Resultado:</strong></p>
+        <p class="border" style="width: 150px;height: 20px;">www.google<del>.com</del></p>
+    
+    <p id="p_2"><strong>&lt;p&gt; = </strong> tag que representa um paragrafo.</strong></p>
+    <p><strong>Exemplo da TAG:</strong></p>
+    <p class="border" style="width: 200px;height: 45px;">
+        &lt;h2&gt;Cabeçalho&lt;/h2&gt;<br>
+        &lt;p&gt;paragrafo&lt;/p&gt;
+    </p>
+    <p><strong>Resultado:</strong></p>
+        <h2 class="border" style="width: 200px;height: 25px;">Cabeçalho</h2>
+        <p class="border" style="width: 200px;height: 20px;">paragrafo</p>
+
+    <p id="abbr"><strong>&lt;abbr&gt; = </strong> tag que representa uma abreviação.</strong></p>
+    <p><strong>Exemplo da TAG:</strong></p>
+    <p class="border" style="width: 450px;height: 20px;">
+        &lt;abbr title="Digital Innovation One"&gt;DIO&lt;/abbr&gt;
+    </p>
+    <p><strong>Resultado:</strong></p>
+    <abbr class="border" style="width: 280px;height: 25px;" title="Digital Innovation One">DIO</abbr>
+    <p><i><strong>OBS:</strong><u> Se passar o mouse por cima do texto vai ver o Texto Completo =D</i></u></p>
+
+<hr />
+
+</body>
+</html>
+
